@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рыболовный Магазин</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Шапка сайта -->
+  <!-- Шапка -->
+  <header>
+    <h1>Золотой Крючок</h1>
+    <nav>
+      <ul>
+        <li><a href="#popular-products">Популярные товары</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#about">О магазине</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Приветственный текст -->
+  <section class="welcome-section">
+    <h2>Добро пожаловать!</h2>
+    <p>Приветствуем всех любителей рыбалки в новом современном магазине "Золотой Крючок," где вы найдёте богатый ассортимент для вашего любимого дела. Предлагаю больше не терять время и ознакомиться с нашим магазином!</p>
+  </section>
+  
+  <!-- Секция популярных товаров -->
+  <section id="popular-products">
+    <h2>Популярные товары</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Товар 1">
+        <h3>Товар 1</h3>
+        <p class="price">500 руб</p>
+        <button class="view-button" onclick="openModal()">Посмотреть</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Товар 2">
+        <h3>Товар 2</h3>
+        <p class="price">700 руб</p>
+        <button class="view-button" onclick="openModal()">Посмотреть</button>
+      </div>
+      <!-- Добавьте другие товары при необходимости -->
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>График работы</h3>
+        <p>Ежедневно с 8:00 до 18:00</p>
+      </div>
+      
+      <div class="footer-social">
+        <h3>Соцсети</h3>
+        <ul>
+          <li><a href="#">ВКонтакте</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Почта</h3>
+        <p>example@mail.com</p>
+      </div>
+
+      <button class="about-button" onclick="openModal()">О компании</button>
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal hidden" id="aboutModal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>О компании</h2>
+      <p>Золотой Крючок - ваш надёжный поставщик рыболовного снаряжения. Мы предлагаем качественные товары для любителей рыбалки по всему миру!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
